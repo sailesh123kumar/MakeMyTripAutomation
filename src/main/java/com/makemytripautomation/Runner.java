@@ -85,8 +85,6 @@ public class Runner {
 		String targetMonth = targetDate.getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH);
 		int targetYear = targetDate.getYear();
 
-		
-
 		By calendarMonthLocator = By.xpath(
 				"//div[text()='" + targetMonth + " " + targetYear + "']//ancestor::div[@class='DayPicker-Month']");
 		WebElement calendarMonth = wait.until(ExpectedConditions.visibilityOfElementLocated(calendarMonthLocator));
